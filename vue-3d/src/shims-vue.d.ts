@@ -5,3 +5,4 @@ declare module '*.vue' {
 
 // 解决 Could not find a declaration file for module 报错
 declare module '*.js'
+declare module '*.png'

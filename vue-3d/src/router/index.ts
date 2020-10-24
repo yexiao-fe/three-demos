@@ -11,14 +11,16 @@ const routes: Array<RouteConfig> = [
     component: InitPage
   },
   {
+    // 元素周期表
     path: '/PeriodicTable',
     name: 'PeriodicTable',
     component: () => import('../views/PeriodicTable.vue')
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
+    // 小精灵
+    path: '/SmallSprites',
+    name: 'SmallSprites',
+    component: () => import('../views/SmallSprites.vue')
   }
 ]
 

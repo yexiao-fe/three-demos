@@ -19,14 +19,14 @@ export default Vue.extend({
       active: "",
       navList: [
         { name: "元素周期表", path: "/PeriodicTable" },
-        { name: "test1", path: "/about" },
+        { name: "小精灵", path: "/SmallSprites" },
         { name: "test2", path: "/about" },
         { name: "test3", path: "/about" },
       ],
     };
   },
   methods: {
-    selectName(item) {
+    selectName(item: any) {
       if (this.active === item.name) {
         this.active = "";
         this.$router.push("/");

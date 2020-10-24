@@ -19,9 +19,9 @@ export default Vue.extend({
     };
   },
   created() {
-    this.timer = null;
-    if (this.timer) clearInterval(this.timer);
-    this.timer = setInterval(this.setTime, 1000);
+    if ((this as any).timer) clearInterval((this as any).timer);
+    (this as any).timer = null;
+    (this as any).timer = setInterval((this as any).setTime, 1000);
   },
   methods: {
     setTime(): void {
@@ -32,15 +32,15 @@ export default Vue.extend({
       const hour: number = date.getHours();
       const min: number = date.getMinutes();
       const sec: number = date.getSeconds();
-      this.date = `${year}-${
+      (this as any).date = `${year}-${
         mon < 9 ? "0" + String(mon + 1) : String(mon + 1)
       }-${day < 10 ? "0" + String(day) : String(day)}`;
-      this.times = `${hour < 10 ? "0" + String(hour) : String(hour)}:${
+      (this as any).times = `${hour < 10 ? "0" + String(hour) : String(hour)}:${
         min < 10 ? "0" + String(min) : String(min)
       }:${sec < 10 ? "0" + String(sec) : String(sec)}`;
     },
     beforeDestroy(): void {
-      if (this.timer) clearInterval(this.timer);
+      if ((this as any).timer) clearInterval((this as any).timer);
     },
   },
 });
