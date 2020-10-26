@@ -83,7 +83,6 @@ export default Vue.extend({
         false
       );
       image.src = textImg;
-      console.log(image);
 
       this._plane();
       this._cube();

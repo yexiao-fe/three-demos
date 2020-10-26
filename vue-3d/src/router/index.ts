@@ -21,6 +21,12 @@ const routes: Array<RouteConfig> = [
     path: '/SmallSprites',
     name: 'SmallSprites',
     component: () => import('../views/SmallSprites.vue')
+  },
+  {
+    // 分子结构
+    path: '/MolecularStructure',
+    name: 'MolecularStructure',
+    component: () => import('../views/MolecularStructure.vue')
   }
 ]
 

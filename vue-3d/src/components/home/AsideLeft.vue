@@ -20,7 +20,7 @@ export default Vue.extend({
       navList: [
         { name: "元素周期表", path: "/PeriodicTable" },
         { name: "小精灵", path: "/SmallSprites" },
-        { name: "test2", path: "/about" },
+        { name: "分子结构", path: "/MolecularStructure" },
         { name: "test3", path: "/about" },
       ],
     };
