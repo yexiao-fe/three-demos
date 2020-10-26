@@ -27,6 +27,12 @@ const routes: Array<RouteConfig> = [
     path: '/MolecularStructure',
     name: 'MolecularStructure',
     component: () => import('../views/MolecularStructure.vue')
+  },
+  {
+    // 网格图
+    path: '/LineWireframe',
+    name: 'LineWireframe',
+    component: () => import('../views/LineWireframe.vue')
   }
 ]
 

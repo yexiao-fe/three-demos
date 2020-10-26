@@ -21,7 +21,7 @@ export default Vue.extend({
         { name: "元素周期表", path: "/PeriodicTable" },
         { name: "小精灵", path: "/SmallSprites" },
         { name: "分子结构", path: "/MolecularStructure" },
-        { name: "test3", path: "/about" },
+        { name: "网格图", path: "/LineWireframe" },
       ],
     };
   },
