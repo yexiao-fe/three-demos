@@ -23,6 +23,7 @@ export default Vue.extend({
         { name: "分子结构", path: "/MolecularStructure" },
         { name: "网格图", path: "/LineWireframe" },
         { name: "地球", path: "/EarthModal" },
+        { name: "文字", path: "/TextLine" },
       ],
     };
   },

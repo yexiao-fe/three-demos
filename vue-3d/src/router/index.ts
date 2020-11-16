@@ -39,6 +39,12 @@ const routes: Array<RouteConfig> = [
     path: '/EarthModal',
     name: 'EarthModal',
     component: () => import('../views/EarthModal.vue')
+  },
+  {
+    // 文字
+    path: '/TextLine',
+    name: 'TextLine',
+    component: () => import('../views/TextLine.vue')
   }
 ]
 
