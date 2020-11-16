@@ -33,6 +33,12 @@ const routes: Array<RouteConfig> = [
     path: '/LineWireframe',
     name: 'LineWireframe',
     component: () => import('../views/LineWireframe.vue')
+  },
+  {
+    // 地球
+    path: '/EarthModal',
+    name: 'EarthModal',
+    component: () => import('../views/EarthModal.vue')
   }
 ]
 
